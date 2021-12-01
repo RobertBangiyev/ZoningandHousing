@@ -1,1 +1,47 @@
-<h2>Zoning Laws and the Housing Market</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zoning and Housing</title>
+</head>
+<body>
+    <h2>Zoning Laws and the Housing Market</h2>
+    <h4 id="name">By Robert Bangiyev</h4>
+    <p class="centered">Link: <a href="https://robertbangiyev.github.io/ZoningandHousing/">https://robertbangiyev.github.io/ZoningandHousing/</a></p>
+    <a href="https://www.kaggle.com/new-york-city/nyc-buildings?select=BK.csv">First Dataset</a>
+    <a href="https://www1.nyc.gov/site/finance/taxes/property-annualized-sales-update.page">Second Dataset</a>
+    <h4>Work Completed:</h4>
+    <ul>
+        <li>Completed cleaning the first dataset by getting rid of all rows with a 0 for the year</li>
+        <li>Filtered the dataset to only deal with the residential districts (R1, R2, etc) for part of my analysis</li>
+        <li>Completed analyzing the dataset, where I noticed the differences in buildings built per zoning district. In Manhattan, for example, most units were built in areas where the district has R7-2 and R8B zoning. In Staten Island, in comparison, most units were built in districts zoned for R5 or below.</li>
+        <li>Completed bar graphs to display the results of the analysis above</li>
+        <h4>Queens:</h4>
+        <img src="img/queens.png" alt="queens">
+        <h4>Brooklyn:</h4>
+        <img src="img/brooklyn.png" alt="brooklyn">
+        <h4>Manhattan:</h4>
+        <img src="img/manhattan.png" alt="manhattan">
+        <h4>Bronx:</h4>
+        <img src="img/bronx.png" alt="bronx">
+        <h4>Staten Island:</h4>
+        <img src="img/statenisland.png" alt="statenisland">
+    </ul>
+    <h4>Work Planned:</h4>
+    <ul>
+        <li>I plan on doing further analysis on the first dataset to see how the number of buildings changed for each zone type over time and see how the number of buildings being built changed after a zoning regulation was implemented</li>
+        <li>I plan on using predictive models from sklearn to predict the number of buildings which will be built per year in a district given the zoning regulation</li>
+        <li>I plan on analyzing the second dataset to see how the average sale price changed for each district for each zone type, over time. However, I noticed that the dataset only has values going back to 2003, which is a problem, as the first dataset I’m working with goes back to the early 1900s and has most of its data from before 2003. If I do not find a better dataset, I must either drop it and focus strictly on the first dataset, come up with a better idea and dataset to go along with the first one, or just stick with this dataset and only focus on data after 2003 for the first dataset. If I end up using this dataset or finding a better one which shows property sales going back to the 1900s, I will:</li>
+        <ul>
+            <li>Find the average sales by district (or ZIP code) </li>
+            <li>Find the average sales over time for a specific district which underwent changes in zoning</li>
+            <li>Create a visualization showing both</li>
+            <li>Create a visualization comparing the number of units built over time to the average sale price for over time</li>
+            <li>Use Linear Regression to predict the average sales of a district given the number of buildings and the zoning regulation</li>
+        </ul>
+    </ul>
+</body>
+</html>
